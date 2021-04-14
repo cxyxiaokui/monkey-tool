@@ -27,7 +27,7 @@ public @interface Idempotent {
      * TOKEN 无效返回错误码
      *
      */
-    int errorCode() default -1;
+    int errorCode() default 400;
 
     /**
      * 错误信息描述

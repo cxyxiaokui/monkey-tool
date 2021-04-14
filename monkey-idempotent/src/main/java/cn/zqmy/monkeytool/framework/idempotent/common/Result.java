@@ -26,12 +26,6 @@ public class Result<T> {
     private T data;
 
 
-    Result setCode(ResultCode resultCode) {
-        this.code = resultCode.getCode();
-        return this;
-    }
-
-
     public Integer getCode() {
         return code;
     }

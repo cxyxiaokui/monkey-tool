@@ -33,23 +33,40 @@ public class IdempotentAutoConfiguration implements WebMvcConfigurer {
         this.idempotentProperties = idempotentProperties;
     }
 
+    /**
+     * 设置接口幂等Service 注入到Spring容器中。
+     *
+     * @return IdempotentTokenService
+     */
     @Bean
     @ConditionalOnMissingBean(IdempotentTokenService.class)
     public IdempotentTokenService idempotentTokenService() {
+
         DefaultTokenServiceImpl defaultTokenService = new DefaultTokenServiceImpl();
         String tokenPrefix = idempotentProperties.getTokenPrefix();
         if (StrUtil.isBlank(tokenPrefix)) {
             idempotentProperties.setTokenPrefix(applicationName);
         }
+
         defaultTokenService.setIdempotentProperties(idempotentProperties);
         return defaultTokenService;
     }
 
+    /**
+     * 注册接口幂等拦截器
+     *
+     * @param registry InterceptorRegistry
+     */
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(idempotentInterceptor()).order(idempotentProperties.getIdempotentInterceptOrderSn()).addPathPatterns("/**");
     }
 
+    /**
+     * 设置接口幂等lan拦截器 注入到Spring容器中。
+     *
+     * @return IdempotentInterceptor
+     */
     @Bean
     public IdempotentInterceptor idempotentInterceptor() {
         return new IdempotentInterceptor();
