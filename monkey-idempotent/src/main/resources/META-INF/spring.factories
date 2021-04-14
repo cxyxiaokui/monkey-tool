@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.zqmy.monkeytool.framework.idempotent.configuration.IdempotentAutoConfiguration
