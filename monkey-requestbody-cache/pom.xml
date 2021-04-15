@@ -10,7 +10,7 @@
         <version>0.5.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>monkey-requestbody-cache-filter</artifactId>
+    <artifactId>monkey-requestbody-cache</artifactId>
     <dependencies>
         <dependency>
             <groupId>cn.hutool</groupId>

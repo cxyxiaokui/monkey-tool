@@ -19,7 +19,7 @@
         <module>monkey-http</module>
         <module>monkey-cache</module>
         <module>monkey-idempotent</module>
-        <module>monkey-requestbody-cache-filter</module>
+        <module>monkey-requestbody-cache</module>
         <module>monkey-async-task-manager</module>
     </modules>
 
