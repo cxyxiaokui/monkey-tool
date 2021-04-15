@@ -1,6 +1,6 @@
-package cn.zqmy.monkeytool.framework.idempotent;
+package cn.zqmy.monkeytool.idempotent;
 
-import cn.zqmy.monkeytool.framework.idempotent.properties.IdempotentProperties;
+import cn.zqmy.monkeytool.idempotent.properties.IdempotentProperties;
 
 /**
  * Token 服务

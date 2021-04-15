@@ -11,6 +11,9 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>monkey-common</module>
+        <module>monkey-core</module>
+        <module>monkey-apiversion</module>
         <module>monkey-notification</module>
         <module>monkey-log</module>
         <module>monkey-http</module>

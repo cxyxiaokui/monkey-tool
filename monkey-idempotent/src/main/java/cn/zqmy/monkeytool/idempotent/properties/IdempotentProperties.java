@@ -1,4 +1,4 @@
-package cn.zqmy.monkeytool.framework.idempotent.properties;
+package cn.zqmy.monkeytool.idempotent.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.http.HttpStatus;

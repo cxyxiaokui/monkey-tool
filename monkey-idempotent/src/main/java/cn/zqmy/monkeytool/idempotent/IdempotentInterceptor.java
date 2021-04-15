@@ -1,12 +1,12 @@
-package cn.zqmy.monkeytool.framework.idempotent;
+package cn.zqmy.monkeytool.idempotent;
 
 import cn.hutool.json.JSONUtil;
-import cn.zqmy.monkeytool.framework.idempotent.annotaion.Idempotent;
-import cn.zqmy.monkeytool.framework.idempotent.common.Result;
-import cn.zqmy.monkeytool.framework.idempotent.common.ResultGenerator;
-import cn.zqmy.monkeytool.framework.idempotent.exception.NoAccessException;
-import cn.zqmy.monkeytool.framework.idempotent.exception.ParamValidException;
-import cn.zqmy.monkeytool.framework.idempotent.properties.IdempotentProperties;
+import cn.zqmy.monkeytool.idempotent.annotaion.Idempotent;
+import cn.zqmy.monkeytool.idempotent.common.Result;
+import cn.zqmy.monkeytool.idempotent.common.ResultGenerator;
+import cn.zqmy.monkeytool.idempotent.exception.NoAccessException;
+import cn.zqmy.monkeytool.idempotent.exception.ParamValidException;
+import cn.zqmy.monkeytool.idempotent.properties.IdempotentProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

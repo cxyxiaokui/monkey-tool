@@ -1,4 +1,4 @@
-package cn.zqmy.monkeytool.framework.idempotent.exception;
+package cn.zqmy.monkeytool.idempotent.exception;
 
 /**
  * 无访问权限异常

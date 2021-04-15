@@ -1,10 +1,10 @@
-package cn.zqmy.monkeytool.framework.idempotent;
+package cn.zqmy.monkeytool.idempotent;
 
 import cn.hutool.core.util.StrUtil;
 import cn.zqmy.monkeytool.cache.util.RedisStringUtil;
-import cn.zqmy.monkeytool.framework.idempotent.exception.NoAccessException;
-import cn.zqmy.monkeytool.framework.idempotent.exception.ParamValidException;
-import cn.zqmy.monkeytool.framework.idempotent.properties.IdempotentProperties;
+import cn.zqmy.monkeytool.idempotent.exception.NoAccessException;
+import cn.zqmy.monkeytool.idempotent.exception.ParamValidException;
+import cn.zqmy.monkeytool.idempotent.properties.IdempotentProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import java.util.UUID;
 

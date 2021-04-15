@@ -1,10 +1,10 @@
-package cn.zqmy.monkeytool.framework.idempotent.configuration;
+package cn.zqmy.monkeytool.idempotent.configuration;
 
 import cn.hutool.core.util.StrUtil;
-import cn.zqmy.monkeytool.framework.idempotent.properties.IdempotentProperties;
-import cn.zqmy.monkeytool.framework.idempotent.DefaultTokenServiceImpl;
-import cn.zqmy.monkeytool.framework.idempotent.IdempotentInterceptor;
-import cn.zqmy.monkeytool.framework.idempotent.IdempotentTokenService;
+import cn.zqmy.monkeytool.idempotent.properties.IdempotentProperties;
+import cn.zqmy.monkeytool.idempotent.DefaultTokenServiceImpl;
+import cn.zqmy.monkeytool.idempotent.IdempotentInterceptor;
+import cn.zqmy.monkeytool.idempotent.IdempotentTokenService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

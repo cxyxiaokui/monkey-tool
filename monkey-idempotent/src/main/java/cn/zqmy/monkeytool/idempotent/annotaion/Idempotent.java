@@ -1,4 +1,4 @@
-package cn.zqmy.monkeytool.framework.idempotent.annotaion;
+package cn.zqmy.monkeytool.idempotent.annotaion;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

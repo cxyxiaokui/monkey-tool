@@ -1,4 +1,4 @@
-package cn.zqmy.monkeytool.framework.idempotent.common;
+package cn.zqmy.monkeytool.idempotent.common;
 
 import com.alibaba.fastjson.JSON;
 
