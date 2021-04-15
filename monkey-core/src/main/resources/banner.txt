@@ -1,0 +1,11 @@
+ ${AnsiColor.YELLOW} __  __             _               _____ _                 _
+ ${AnsiColor.YELLOW}|  \/  |           | |             / ____| |               | |
+ ${AnsiColor.YELLOW}| \  / | ___  _ __ | | _____ _   _| |    | | ___  _   _  __| |
+ ${AnsiColor.YELLOW}| |\/| |/ _ \| '_ \| |/ / _ \ | | | |    | |/ _ \| | | |/ _` |
+ ${AnsiColor.YELLOW}| |  | | (_) | | | |   <  __/ |_| | |____| | (_) | |_| | (_| |
+ ${AnsiColor.YELLOW}|_|  |_|\___/|_| |_|_|\_\___|\__, |\_____|_|\___/ \__,_|\__,_|
+ ${AnsiColor.YELLOW}                              __/ |
+ ${AnsiColor.YELLOW}                             |___/
+
+${AnsiColor.BRIGHT_GREEN}::    Monkey Cloud Version  ::${AnsiColor.BLACK}  (1.0.0.RELEASE)
+${AnsiColor.BRIGHT_GREEN}::    Spring Boot Version   ::${AnsiColor.BLACK}  (2.1.2.RELEASE)
