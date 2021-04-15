@@ -57,12 +57,12 @@ public class MonkeyLogAspect {
      */
     private boolean genFirstRequestTraceIdToMdc() {
         // 在日志中记录一次请求ID
-        String id = MDC.get(monkeyLogProperties.getInnerTarceIdKey());
+        String id = MDC.get(monkeyLogProperties.getMonkeyTraceIdKey());
         boolean isFirstInvoke = false;
         if (StrUtil.isBlank(id)) {
             isFirstInvoke = true;
             id = UUID.fastUUID().toString().replace("-", "");
-            MDC.put(monkeyLogProperties.getInnerTarceIdKey(), id);
+            MDC.put(monkeyLogProperties.getMonkeyTraceIdKey(), id);
         }
         return isFirstInvoke;
     }
@@ -90,7 +90,7 @@ public class MonkeyLogAspect {
             try {
                 // 不打印查询结果
                 String resultStr = "";
-                if (monkeyLog.loggerType() == 0) {
+                if (monkeyLog.type() == 0) {
                     resultStr = "未打印";
                 } else {
                     if (!(object instanceof HttpServletRequest) && !(object instanceof HttpServletResponse)) {
@@ -103,7 +103,7 @@ public class MonkeyLogAspect {
                 LOGGER.error("打印返回值抛错：" + e.getMessage(), e);
             }
             if (isFirstInvoke) {
-                MDC.remove(monkeyLogProperties.getInnerTarceIdKey());
+                MDC.remove(monkeyLogProperties.getMonkeyTraceIdKey());
             }
         }
         return object;

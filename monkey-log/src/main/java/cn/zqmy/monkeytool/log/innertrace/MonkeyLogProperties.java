@@ -8,18 +8,18 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @Date: 2021/04/15
  * @since 0.2.1
  **/
-@ConfigurationProperties(prefix = "inner.trace.log")
+@ConfigurationProperties(prefix = "monkeycloud.log")
 public class MonkeyLogProperties {
 
-    private static final String INNER_TRACE_ID_KEY =  "bsy_trace_id";
+    private static final String TRACE_ID_KEY =  "monkey_trace_id";
 
-    private String innerTarceIdKey = INNER_TRACE_ID_KEY;
+    private String monkeyTraceIdKey = TRACE_ID_KEY;
 
-    public String getInnerTarceIdKey() {
-        return innerTarceIdKey;
+    public String getMonkeyTraceIdKey() {
+        return monkeyTraceIdKey;
     }
 
-    public void setInnerTarceIdKey(String innerTarceIdKey) {
-        this.innerTarceIdKey = innerTarceIdKey;
+    public void setMonkeyTraceIdKey(String monkeyTraceIdKey) {
+        this.monkeyTraceIdKey = monkeyTraceIdKey;
     }
 }

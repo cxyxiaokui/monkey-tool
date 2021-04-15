@@ -28,5 +28,5 @@ public @interface MonkeyLog {
      *
      * @return
      */
-    byte loggerType() default 1;
+    byte type() default 1;
 }
