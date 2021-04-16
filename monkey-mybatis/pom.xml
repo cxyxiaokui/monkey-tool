@@ -10,24 +10,12 @@
         <version>0.6.0-SNAPSHOT</version>
     </parent>
     
-    <artifactId>monkey-http</artifactId>
+    <artifactId>monkey-mybatis</artifactId>
     <dependencies>
         <dependency>
-            <groupId>cn.hutool</groupId>
-            <artifactId>hutool-all</artifactId>
-            <version>5.4.0</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.74</version>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>22.0</version>
+            <groupId>cn.zqmy</groupId>
+            <artifactId>monkey-common</artifactId>
+            <version>${monkey-tool.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -39,10 +27,21 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        <!--MySQL JDBC驱动-->
         <dependency>
-            <groupId>com.arronlong</groupId>
-            <artifactId>httpclientutil</artifactId>
-            <version>1.0.4</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--阿里 Druid Spring Boot Starter依赖-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>${mybatis.version}</version>
         </dependency>
     </dependencies>
 
